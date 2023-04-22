@@ -1,0 +1,47 @@
+.header {
+  background-color: #1a1a1a;
+  height: 70px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  font-weight: 600;
+  border-bottom: #fff 1px solid;
+  .home{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    img{
+      width: 100%;
+      cursor: pointer;
+    }
+    .labelComponent{
+      font-size: 0.5rem;
+      align-self: flex-end;
+    }
+  }
+  nav {
+    width: 55%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+:host::ng-deep.nav__item {
+  div {
+    background-color: #323232;
+    span {
+      font-weight: 500;
+      color: #fff !important;
+      &:hover {
+        color: black !important;
+      }
+    }
+  }
+}

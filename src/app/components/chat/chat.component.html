@@ -1,0 +1,11 @@
+<div class="chat__container">
+  <div class="chat__messagess_container">
+    <app-message [message]="message" *ngFor="let message of messages"></app-message>
+  </div>
+  <div class="chat__input_container">
+    <span class="p-input-icon-right">
+      <i class="pi pi-send" (click)="postMessage()"></i>
+      <input type="text" pInputText [(ngModel)]="inputValue" />
+    </span>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.message{
+  width: 100%;
+  min-width: 250px;
+  font-size: 1em;
+  border: 0.5px solid #0A3871;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  .message__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .message__name{
+      display: flex;
+      gap: 2px;
+      font-weight: 600;
+    }
+  }
+  .message__content{
+    color: #495057;
+  }
+
+}

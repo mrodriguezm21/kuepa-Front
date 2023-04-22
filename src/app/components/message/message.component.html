@@ -1,0 +1,10 @@
+<div class="message">
+  <div class="message__header">
+    <div class="message__name">
+      <i *ngIf="message.user.rol == 0" class="pi pi-shield message__admin"></i>
+      <span>{{message.user.name}}</span>
+    </div>
+    <span class="message__date">{{message.createdAt | date:'shortTime'}}</span>
+  </div>
+  <span class="message__content">{{message.content}}</span>
+</div>

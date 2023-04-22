@@ -1,0 +1,23 @@
+.lesson__container{
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  margin: 0 auto;
+  height: 90vh;
+  .lesson__video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 3%;
+    width: 70%;
+    height: 100%;
+  }
+  app-chat{
+    width: 25%;
+    height: 80%;
+  }
+}
